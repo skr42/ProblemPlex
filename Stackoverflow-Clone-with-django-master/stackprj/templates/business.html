@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <!-- Inline CSS for styling -->
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color:#FFCF10;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #FFCF10;
+            color: white;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 30px;
+        }
+
+        .section {
+            padding: 15px;
+            border-left: 5px solid #FFCF10;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .btn-signup {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-signup:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            p, ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>Products</h1>
+    </header>
+
+    <main>
+        
+        <a href="{% url 'stackbase:home' %}" class="btn-signup">Home</a>
+        
+        <section class="section">
+            <h2>Partner with ProblemPlex</h2>
+            <p>At ProblemPlex, we value partnerships that bring mutual benefits to our community and your business. We offer various collaboration opportunities for businesses to engage with our vast network of developers, tech enthusiasts, and learners.</p>
+            <p>If you’re interested in partnering with us, <a href="/contact-us">contact our team</a> to discuss custom collaboration solutions.</p>
+        </section>
+        </section>
+        
+        <section class="section">
+            <h2>Advertising Opportunities</h2>
+            <p>Reach your target audience through our platform. With a community of developers, students, and tech professionals, advertising on ProblemPlex offers great visibility for your business. We offer:</p>
+            <ul>
+                <li>Banner Ads</li>
+                <li>Sponsorships for Coding Challenges</li>
+                <li>Sponsored Content and Tutorials</li>
+                <li>Exclusive Offers for Our Users</li>
+            </ul>
+            <p>To learn more about advertising with ProblemPlex, <a href="/advertising">click here</a>.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Custom Business Solutions</h2>
+            <p>We offer custom solutions tailored to your business needs. Whether you need advanced coding tools, API integration, or specific features for your development team, ProblemPlex can help. Our platform provides:</p>
+            <ul>
+                <li>Custom API Development</li>
+                <li>Enterprise-Level Code Review Tools</li>
+                <li>Real-time Analytics and Reporting</li>
+                <li>On-demand Developer Support</li>
+            </ul>
+            <p>Contact us for more details about our custom solutions and pricing options.</p>
+        </section>
+        </section>
+        
+        <section class="section">
+            <h2>Join Our Business Community</h2>
+            <p>ProblemPlex isn't just for developers—it's a community that encourages innovation and growth for businesses. By joining, you’ll gain access to a talent pool of developers, engage in cutting-edge tech discussions, and be part of exclusive events.</p>
+            <p>Sign up for our <a href="/business-network">Business Network</a> today to stay connected with the tech community.</p>
+        </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Problem Plex. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+{% endblock content %}
+
